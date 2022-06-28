@@ -1,0 +1,40 @@
+.row{
+    color: white;
+    margin-left: 20px;
+}
+.row_posters
+{
+    display: flex;
+    /* converts it into one single row of posters */
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+.row_posters::-webkit-scrollbar
+{
+    display :none;
+}
+.row__poster
+{
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    transition: transform 500ms;
+    margin-right:  10px;
+
+}
+.row__poster :hover
+{
+    transform: scale(1.2);
+    /* when we hover the size will increase to 1.2 times, and will take a time of 450ms for this transition */
+
+}
+.row__posterLarger
+{
+    max-height: 250px;
+}
+.row__posterLarger:hover
+{
+    transform: scale(1.25);
+    
+}
